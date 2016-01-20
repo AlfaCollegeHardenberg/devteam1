@@ -40,10 +40,10 @@ if (isset($_SESSION['id'])) {
         
         <?php
         $query = "SELECT * FROM klassen";
-        $result = mysql_query($dbConn, $query);
+        $result = mysql_query($dbCon, $query);
         echo '<select>'
             while ($row = mysql_fetch_assoc($result)) {
-            echo '<option value="">'.$row['Richting'] . ' - ' .$row['Klas_naam'].'</option>';
+            echo '<option value="">'.$row['Richting'] .' - ' .$row['Klas_naam'].'</option>';
         }
         echo '</select>';
         ?>
