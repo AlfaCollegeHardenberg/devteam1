@@ -1,29 +1,60 @@
 <?php
-	require_once('header.php');
+error_reporting(E_ALL & ~E_NOTICE);
+session_start();
+
+if($_POST['submit']) {
+    include_once("connection.php");
+    $username = strip_tags($_POST['username']);
+    $password = strip_tags($_POST['password']);
+    
+    $sql = "SELECT id, username, password FROM members WHERE username = '$username' AND activated = '1' LIMIT 1";
+    $query = mysqli_query($dbCon, $sql);
+    
+    if ($query) {
+        $row = mysqli_fetch_row($query);
+        $userId = $row[0];
+        $dbUsername = $row[1];
+        $dbPassword = $row[2];
+    }
+    
+    if ($username == $dbUsername && $password == $dbPassword) {
+        $_SESSION['username'] = $username;
+        $_SESSION['id'] = $userId;
+        header('Location: user.php');
+    } else {
+        echo "De gebruikersnaam of het wachtwoord is foutief!";
+    }
+}
+
 
 ?>
 
-
-<section>
-    
-    <a class="link3" href="">
-    	<div id="voortgangknop">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP/MySQL Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+</head>
+<body>
+    <div id="wrapper">
+        <div id="loginheader">
+        
         </div>
-    </a>
-            
-    <div id="pag1blok1">
-        <h1 class="titel">Welkom!</h1>
-        <p>Op deze website kun je al je voortgang zien van jouw vakken. 
-        	Klik op de grote knop waar "voortgang" op staat om jou progressie te bekijken.
-        </p>
-    </div> 
-    
-    <div id="pag1img1">
-    
-    </div>
-    
-</section>
+        <div id="loginblok1">
+            <br /><br />
+            <h1 class="kleurtekst">Inloggen</h1>
+                <form id="inlogformulier" method="post" action="index.php">
+                    <label class="kleurtekst">Gebruikersnaam</label><br />
+                <input type="text" placeholder="Username" name="username" /><br />
+                    <label class="kleurtekst">Wachtwoord</label><br />
+                <input type="password" placeholder="Password" name="password" /><br />
+                <input type="submit" name="submit" value="Log In" />
 
-<?php
-	require_once ('footer.php');
-?>
+            </form>    
+        </div>
+        <div id="footerlogin">
+            ToWiKa@gmail.com
+        </div>
+</div>
+</body>
+</html>

@@ -24,7 +24,7 @@
         
         <ul>
             <li class="link1"><a href="index.html">Home</a></li>
-            <li class="link2"><a href="index.html">Inloggen</a></li>
+            <li class="link2"><a href="logout.php">Uitloggen</a></li>
         </ul>
     </nav>
     
