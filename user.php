@@ -20,7 +20,6 @@ if (isset($_SESSION['id'])) {
 <body>
   <?php
 	require_once('header.php');
-    require_once('connection.php');
 
 ?>
 
@@ -37,19 +36,6 @@ if (isset($_SESSION['id'])) {
         <p>Op deze website kun je al je voortgang zien van jouw vakken. 
         	Klik op de grote knop waar "voortgang" op staat om jou progressie te bekijken.
         </p>
-
-        <?php
-            $query = "SELECT * FROM klassen";
-            $result = mysqli_query($conn, $query);
-            echo '<select>';
-            while ($row = mysqli_fetch_assoc($result)) {
-
-            echo '<option value="">'.$row['Richting'] .' - ' .$row['Klas_naam'].'</option>';
-            
-            }
-            echo '</select>';
-            ?>
-
     </div> 
     
     <div id="pag1img1">

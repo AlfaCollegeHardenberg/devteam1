@@ -8,10 +8,10 @@ if($_POST['submit']) {
     $password = strip_tags($_POST['password']);
     
     $sql = "SELECT id, username, password FROM members WHERE username = '$username' AND activated = '1' LIMIT 1";
-    $query = mysqli_query($dbCon, $sql);
+    $query = mysql_query($sql, $dbCon);
     
     if ($query) {
-        $row = mysqli_fetch_row($query);
+        $row = mysql_fetch_row($query);
         $userId = $row[0];
         $dbUsername = $row[1];
         $dbPassword = $row[2];
