@@ -14,8 +14,6 @@ if (isset($_SESSION['id'])) {
 
 <?php
 require_once('header.php');
-?>
-<?php
 require_once('connection.php');
 ?>
 
@@ -24,7 +22,7 @@ require_once('connection.php');
     
 <?php
         	$query = "SELECT * FROM klassen";
-        	$result = mysqli_query($conn, $query);
+        	$result = mysqli_query($dbCon, $query);
         	echo '<select>';
         	while ($row = mysqli_fetch_assoc($result)) {
 
