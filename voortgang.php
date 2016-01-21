@@ -215,13 +215,36 @@ require_once('connection.php');
                   </tr>
 
                     <tr>
-                    <td>1safsdafdsf</td>
+                      <td> 
+                        <?php 
+                          $query = "SELECT * FROM klassen_ict WHERE id = 3";
+                          $result = mysql_query($query, $dbCon);
+                          $row = mysql_fetch_assoc($result);
+                          echo $row['leerling_naam'];
+                        ?>
+                    </td>
                   </tr>
+
                     <tr>
-                    <td>1</td>
+                      <td>
+                        <?php 
+                          $query = "SELECT * FROM klassen_ict WHERE id = 4";
+                          $result = mysql_query($query, $dbCon);
+                          $row = mysql_fetch_assoc($result);
+                          echo $row['leerling_naam'];
+                        ?>
+                      </td>
                   </tr>
+
                     <tr>
-                    <td>1</td>
+                      <td>                        
+                        <?php 
+                          $query = "SELECT * FROM klassen_ict WHERE id = 5";
+                          $result = mysql_query($query, $dbCon);
+                          $row = mysql_fetch_assoc($result);
+                          echo $row['leerling_naam'];
+                        ?>
+                      </td>
                   </tr>
                     <tr>
                     <td>1</td>
@@ -269,17 +292,17 @@ require_once('connection.php');
                     <td>1</td>
                   </tr>
                 </table>
-        
+<!--        
     <?php
-        $query = "SELECT * FROM klassen";
-        $result = mysql_query($query, $dbCon);
-        echo '<select>';
-        while ($row = mysql_fetch_assoc($result)) {
-            echo '<option value="">'.$row['opleiding'] .' - ' .$row['klas_naam'].'</option>';
-        }
-        echo '</select>';
+        #$query = "SELECT * FROM klassen";
+        #$result = mysql_query($query, $dbCon);
+        #echo '<select>';
+        #while ($row = mysql_fetch_assoc($result)) {
+        #    echo '<option value="">'.$row['opleiding'] .' - ' .$row['klas_naam'].'</option>';
+        #}
+        #echo '</select>';
 ?>
-        
+-->        
             
     </div>
 
