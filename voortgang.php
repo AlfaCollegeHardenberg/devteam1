@@ -26,24 +26,22 @@ if (isset($_SESSION['id'])) {
 
 <section>
     
-    <a class="link3" href="voortgang.html">
-    	<div id="voortgangknop">
-        </div>
-    </a>
+            <div id="pag2blok1">
             
-    <div id="pag1blok1">
-        <h1 class="titel">Welkom!</h1>
-        <p>Op deze website kun je al je voortgang zien van jouw vakken. 
-        	Klik op de grote knop waar "voortgang" op staat om jou progressie te bekijken.
-        </p>
-        
+                <table style="width:100%">
+                  <tr>
+                    <td>Jill</td>
+                    <td>Smith</td> 
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td> 
+                    <td>94</td>
+                  </tr>
+                </table>
             
-
-    </div> 
-    
-    <div id="pag1img1">
-    
-    </div>
+            </div>
     
 </section>
 
