@@ -20,22 +20,22 @@ require_once('connection.php');
             
                 <table style="width:100%">
                   <tr>
-                    <td>1</td>
+                    <td>dasfasf1</td>
+                    <td>2</td> 
+                    <td>3</td>
+                    <td>1asfdsdafsa</td>
                     <td>2</td> 
                     <td>3</td>
                     <td>1</td>
-                    <td>2</td> 
+                    <td>2asfdasdfs</td> 
                     <td>3</td>
                     <td>1</td>
-                    <td>2</td> 
+                    <td>2asfsdaf</td> 
                     <td>3</td>
                     <td>1</td>
-                    <td>2</td> 
+                    <td>asdfsdaf2</td> 
                     <td>3</td>
-                    <td>1</td>
-                    <td>2</td> 
-                    <td>3</td>
-                    <td>1</td>
+                    <td>asfsdaf1</td>
                     <td>2</td> 
                     <td>3</td>
                     <td>1</td>
@@ -43,13 +43,13 @@ require_once('connection.php');
                     <td>1</td>
                   </tr>
                   <tr>
-                    <td>1</td>
+                    <td>1afdsafasd</td>
                   </tr>
                     <tr>
                     <td>1</td>
                   </tr>
                     <tr>
-                    <td>1</td>
+                    <td>1safsdafdsf</td>
                   </tr>
                     <tr>
                     <td>1</td>
