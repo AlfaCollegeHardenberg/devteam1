@@ -32,7 +32,7 @@ require_once('connection.php');
                 </table>
         
     <?php
-        $query = "SELECT * FROM members";
+        $query = "SELECT username, password FROM members";
         $result = mysql_query($dbCon, $query);
         echo '<select>';
         while ($row = mysql_fetch_assoc($result)) {
