@@ -114,9 +114,12 @@ a:hover{
 }
 #pag2blok1{
     width: 1000px;
-    height: 400px;
+    height: 600px;
     background-image: url(images/bg.jpg);
     margin-top: 65px;
+}
+table{
+    border: 1px;
 }
 
 
