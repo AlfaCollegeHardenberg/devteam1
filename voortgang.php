@@ -32,8 +32,8 @@ require_once('connection.php');
                 </table>
         
     <?php
-        $query = "SELECT * FROM klassen";
-        $result = query($dbCon, $query);
+        $klassen = "SELECT * FROM klassen";
+        $result = mysql_query($dbCon, $klassen);
         echo '<select>';
         while ($row = mysql_fetch_assoc($result)) {
             echo '<option value="">'.$row['opleiding'] .' - ' .$row['klas_naam'].'</option>';
