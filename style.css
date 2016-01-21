@@ -113,11 +113,11 @@ a:hover{
     color: #0e3f86;
 }
 #pag2blok1{
-    width: 2000px;
+    width: 1500px;
     height: 600px;
     background-image: url(images/bg.jpg);
     margin-top: 65px;
-    margin-left: -500px;
+    margin-left: -250px;
 }
 table, th, td {
    border: 1px solid black;
