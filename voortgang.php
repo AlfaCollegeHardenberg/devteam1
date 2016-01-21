@@ -108,16 +108,86 @@ require_once('connection.php');
                         echo $row['vak10'];
                       ?>
                     </td>  
-                    <td>3</td>
-                    <td>1</td>
-                    <td>asdfsdaf2</td> 
-                    <td>3</td>
-                    <td>asfsdaf1</td>
-                    <td>2</td> 
-                    <td>3</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>1</td>
+                                                           <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak11'];
+                      ?>
+                    </td> 
+                                                            <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak12'];
+                      ?>
+                    </td> 
+                                                            <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak13'];
+                      ?>
+                    </td> 
+                                                            <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak14'];
+                      ?>
+                    </td> 
+                                                            <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak15'];
+                      ?>
+                    </td> 
+                                                            <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak16'];
+                      ?>
+                    </td>  
+                                                            <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak17'];
+                      ?>
+                    </td> 
+                                                            <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak18'];
+                      ?>
+                    </td> 
+                                                            <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak19'];
+                      ?>
+                    </td> 
+                                                            <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak20'];
+                      ?>
+                    </td> 
                   </tr>
                   <tr>
                     <td>1afdsafasd</td>
