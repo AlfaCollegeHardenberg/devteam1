@@ -22,7 +22,7 @@ require_once('connection.php');
                   <tr>
                     <td>
                       <?php 
-                        $query = "SELECT vak1 FROM voortgangs_tabellen";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row;
