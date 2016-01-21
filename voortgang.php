@@ -25,7 +25,7 @@ require_once('connection.php');
                         $query = "SELECT vak1 FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
-                        echo $result;
+                        echo $row;
                       ?>
                     </td>
                     <td>Vakje1</td> 
