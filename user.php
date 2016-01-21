@@ -15,7 +15,7 @@ if (isset($_SESSION['id'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Secret User Page</title>
+    <title>Loopjijalbij?</title>
 </head>
 <body>
   <?php

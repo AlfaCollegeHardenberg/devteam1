@@ -23,7 +23,7 @@
     <nav>
         
         <ul>
-            <li class="link1"><a href="index.php">Home</a></li>
+            <li class="link1"><a href="user.php.">Home</a></li>
             <li class="link2"><a href="logout.php">Uitloggen</a></li>
         </ul>
     </nav>

@@ -32,7 +32,7 @@ if($_POST['submit']) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PHP/MySQL Login</title>
+    <title>Loopjijalbij?</title>
     <link rel="stylesheet" type="text/css" href="style.css" >
 </head>
 <body>
