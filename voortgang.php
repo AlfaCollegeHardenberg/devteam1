@@ -14,7 +14,7 @@ if (isset($_SESSION['id'])) {
 
 <?php
 require_once('header.php');
-require_once('connection.php');
+include_once('connection.php');
 ?>
 
 <section>
