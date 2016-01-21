@@ -28,9 +28,30 @@ require_once('connection.php');
                         echo $row['vak1'];
                       ?>
                     </td>
-                    <td>Vakje1</td> 
-                    <td>Vakje2</td>
-                    <td>Vakje3</td>
+                    <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak1'];
+                      ?>
+                    </td> 
+                    <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak2'];
+                      ?>
+                    </td> 
+                    <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak3'];
+                      ?>
+                    </td> 
                     <td>2</td> 
                     <td>3</td>
                     <td>1</td>
