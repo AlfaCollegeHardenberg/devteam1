@@ -32,11 +32,11 @@ require_once('connection.php');
                 </table>
         
     <?php
-        $klassen = "SELECT * FROM klassen";
-        $result = mysql_query($dbCon, $klassen);
+        $query = "SELECT * FROM members";
+        $result = mysql_query($dbCon, $query);
         echo '<select>';
         while ($row = mysql_fetch_assoc($result)) {
-            echo '<option value="">'.$row['opleiding'] .' - ' .$row['klas_naam'].'</option>';
+            echo '<option value="">'.$row['username'] .' - ' .$row['password'].'</option>';
         }
         echo '</select>';
 ?>
