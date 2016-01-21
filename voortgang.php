@@ -12,17 +12,9 @@ if (isset($_SESSION['id'])) {
 
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Loopjijalbij?</title>
-</head>
-<body>
   <?php
 	require_once('header.php');
-
 ?>
-
 
 <section>
     
@@ -48,6 +40,3 @@ if (isset($_SESSION['id'])) {
 <?php
 	require_once ('footer.php');
 ?>
-
-</body>
-</html>
