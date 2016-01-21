@@ -204,8 +204,16 @@ require_once('connection.php');
                   </tr>
 
                   <tr>
-                    <td>1</td>
+                    <td>
+                      <?php 
+                        $query = "SELECT * FROM klassen_ict WHERE id = 2";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['leerling_naam'];
+                      ?>
+                    </td>
                   </tr>
+
                     <tr>
                     <td>1safsdafdsf</td>
                   </tr>
