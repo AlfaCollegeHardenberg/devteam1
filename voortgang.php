@@ -20,6 +20,7 @@ require_once('connection.php');
             
                 <table style="width:100%">
                   <tr>
+
                     <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
@@ -52,7 +53,7 @@ require_once('connection.php');
                         echo $row['vak3'];
                       ?>
                     </td> 
-                                        <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -60,7 +61,7 @@ require_once('connection.php');
                         echo $row['vak4'];
                       ?>
                     </td> 
-                                        <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -68,7 +69,7 @@ require_once('connection.php');
                         echo $row['vak5'];
                       ?>
                     </td> 
-                                        <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -76,7 +77,7 @@ require_once('connection.php');
                         echo $row['vak6'];
                       ?>
                     </td> 
-                                        <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -84,7 +85,7 @@ require_once('connection.php');
                         echo $row['vak7'];
                       ?>
                     </td> 
-                                        <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -92,7 +93,7 @@ require_once('connection.php');
                         echo $row['vak8'];
                       ?>
                     </td> 
-                                        <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -100,7 +101,7 @@ require_once('connection.php');
                         echo $row['vak9'];
                       ?>
                     </td> 
-                                        <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -108,7 +109,7 @@ require_once('connection.php');
                         echo $row['vak10'];
                       ?>
                     </td>  
-                                                           <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -116,7 +117,7 @@ require_once('connection.php');
                         echo $row['vak11'];
                       ?>
                     </td> 
-                                                            <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -124,7 +125,7 @@ require_once('connection.php');
                         echo $row['vak12'];
                       ?>
                     </td> 
-                                                            <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -132,7 +133,7 @@ require_once('connection.php');
                         echo $row['vak13'];
                       ?>
                     </td> 
-                                                            <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -140,7 +141,7 @@ require_once('connection.php');
                         echo $row['vak14'];
                       ?>
                     </td> 
-                                                            <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -148,7 +149,7 @@ require_once('connection.php');
                         echo $row['vak15'];
                       ?>
                     </td> 
-                                                            <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -156,7 +157,7 @@ require_once('connection.php');
                         echo $row['vak16'];
                       ?>
                     </td>  
-                                                            <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -164,7 +165,7 @@ require_once('connection.php');
                         echo $row['vak17'];
                       ?>
                     </td> 
-                                                            <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -172,7 +173,7 @@ require_once('connection.php');
                         echo $row['vak18'];
                       ?>
                     </td> 
-                                                            <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
@@ -180,19 +181,29 @@ require_once('connection.php');
                         echo $row['vak19'];
                       ?>
                     </td> 
-                                                            <td>
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak20'];
                       ?>
-                    </td> 
+                    </td>
+
                   </tr>
+
                   <tr>
-                    <td>1afdsafasd</td>
+                    <td>
+                      <?php 
+                        $query = "SELECT * FROM klassen_ict WHERE id = 1";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['leerling_naam'];
+                      ?>
+                    </td>
                   </tr>
-                    <tr>
+
+                  <tr>
                     <td>1</td>
                   </tr>
                     <tr>
