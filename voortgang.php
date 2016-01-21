@@ -20,21 +20,21 @@ require_once('connection.php');
 <section>
     
     
-<?php
-        	$query = "SELECT * FROM klassen";
-        	$result = mysqli_query($dbCon, $query);
-            echo $result;
+//<?php
+//        	$query = "SELECT * FROM klassen";
+//        	$result = mysqli_query($dbCon, $query);
+//            echo $result;
 
             
 
-        	//echo '<select>';
-        	//while ($row = mysqli_fetch_assoc($result)) {
+  //      	echo '<select>';
+    //    	while ($row = mysqli_fetch_assoc($result)) {
 
-        	//echo '<option value="">'.$row['Richting'] .' - ' .$row['Klas_naam'].'</option>';
+      //  	echo '<option value="">'.$row['Richting'] .' - ' .$row['Klas_naam'].'</option>';
 			
-			//}
-			//echo '</select>';
-?>
+//}
+//			echo '</select>';
+//?>
 
             <div id="pag2blok1">
             
