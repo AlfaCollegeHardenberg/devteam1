@@ -26,7 +26,7 @@ if (isset($_SESSION['id'])) {
 
 <section>
     
-    <a class="link3" href="voortgang.html">
+    <a class="link3" href="voortgang.php">
     	<div id="voortgangknop">
         </div>
     </a>

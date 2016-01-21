@@ -26,7 +26,7 @@ if (isset($_SESSION['id'])) {
 
 <section>
     
-            <div id="pag2blok1">
+            <div class="pag2blok1">
             
                 <table style="width:100%">
                   <tr>
