@@ -23,13 +23,17 @@ require_once('connection.php');
 <?php
         	$query = "SELECT * FROM klassen";
         	$result = mysqli_query($dbCon, $query);
-        	echo '<select>';
-        	while ($row = mysqli_fetch_assoc($result)) {
+            echo $result;
 
-        	echo '<option value="">'.$row['Richting'] .' - ' .$row['Klas_naam'].'</option>';
+            
+
+        	//echo '<select>';
+        	//while ($row = mysqli_fetch_assoc($result)) {
+
+        	//echo '<option value="">'.$row['Richting'] .' - ' .$row['Klas_naam'].'</option>';
 			
-			}
-			echo '</select>';
+			//}
+			//echo '</select>';
 ?>
 
             <div id="pag2blok1">
