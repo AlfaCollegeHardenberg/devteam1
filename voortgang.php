@@ -31,7 +31,7 @@ require_once('connection.php');
 			}
 			echo '</select>';
 ?>
-<!--
+
             <div id="pag2blok1">
             
                 <table style="width:100%">
@@ -48,7 +48,7 @@ require_once('connection.php');
                 </table>
             
             </div>
--->
+
     
 </section>
 
