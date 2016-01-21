@@ -20,7 +20,13 @@ require_once('connection.php');
             
                 <table style="width:100%">
                   <tr>
-                    <td>Vaknaam</td>
+                    <td>
+                      <?php 
+                        $query = "SELECT vak1 FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        echo $result
+                      ?>
+                    </td>
                     <td>Vakje1</td> 
                     <td>Vakje2</td>
                     <td>Vakje3</td>
