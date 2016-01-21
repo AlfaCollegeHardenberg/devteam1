@@ -36,11 +36,12 @@ require_once('connection.php');
     <?php
         $query = "SELECT * FROM klassen";
         $result = mysql_query($dbCon, $query);
-        echo '<select>';
-        while ($row = mysql_fetch_assoc($result)) {
-            echo '<option value="">'.$row['opleiding'] .' - ' .$row['klas_naam'].'</option>';
-        }
-        echo '</select>';
+        echo $result
+        //echo '<select>';
+        //while ($row = mysql_fetch_assoc($result)) {
+        //    echo '<option value="">'.$row['opleiding'] .' - ' .$row['klas_naam'].'</option>';
+        //}
+        //echo '</select>';
 ?>
         
             
