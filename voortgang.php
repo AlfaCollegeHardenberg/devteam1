@@ -18,25 +18,7 @@ require_once('connection.php');
 ?>
 
 <section>
-    
-    
-//<?php
-//        	$query = "SELECT * FROM klassen";
-//        	$result = mysqli_query($dbCon, $query);
-//            echo $result;
-
-            
-
-  //      	echo '<select>';
-    //    	while ($row = mysqli_fetch_assoc($result)) {
-
-      //  	echo '<option value="">'.$row['Richting'] .' - ' .$row['Klas_naam'].'</option>';
-			
-//}
-//			echo '</select>';
-//?>
-
-            <div id="pag2blok1">
+    <div id="pag2blok1">
             
                 <table style="width:100%">
                   <tr>
@@ -50,8 +32,19 @@ require_once('connection.php');
                     <td>94</td>
                   </tr>
                 </table>
+        
+    <?php
+        $query = "SELECT * FROM klassen";
+        $result = mysql_query($dbCon, $query);
+        echo '<select>';
+        while ($row = mysql_fetch_assoc($result)) {
+            echo '<option value="">'.$row['Richting'] .' - ' .$row['Klas_naam'].'</option>';
+        }
+        echo '</select>';
+?>
+        
             
-            </div>
+    </div>
 
     
 </section>
