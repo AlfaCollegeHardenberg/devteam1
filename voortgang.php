@@ -12,12 +12,26 @@ if (isset($_SESSION['id'])) {
 
 ?>
 
-  <?php
-	require_once('header.php');
+<?php
+require_once('header.php');
+require_once('connection.php');
 ?>
 
 <section>
     
+    
+<?php
+        	$query = "SELECT * FROM klassen";
+        	$result = mysqli_query($conn, $query);
+        	echo '<select>';
+        	while ($row = mysqli_fetch_assoc($result)) {
+
+        	echo '<option value="">'.$row['Richting'] .' - ' .$row['Klas_naam'].'</option>';
+			
+			}
+			echo '</select>';
+?>
+<!--
             <div id="pag2blok1">
             
                 <table style="width:100%">
@@ -34,6 +48,7 @@ if (isset($_SESSION['id'])) {
                 </table>
             
             </div>
+-->
     
 </section>
 
