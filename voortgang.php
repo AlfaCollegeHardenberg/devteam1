@@ -20,10 +20,10 @@ require_once('connection.php');
             
                 <table style="width:100%">
                   <tr>
-                    <td>dasfasf1</td>
-                    <td>2</td> 
-                    <td>3</td>
-                    <td>1asfdsdafsa</td>
+                    <td>Vaknaam</td>
+                    <td>Vakje1</td> 
+                    <td>Vakje2</td>
+                    <td>Vakje3</td>
                     <td>2</td> 
                     <td>3</td>
                     <td>1</td>
