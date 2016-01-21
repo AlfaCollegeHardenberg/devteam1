@@ -38,7 +38,7 @@ require_once('connection.php');
         $result = mysql_query($dbCon, $query);
         echo '<select>';
         while ($row = mysql_fetch_assoc($result)) {
-            echo '<option value="">'.$row['Richting'] .' - ' .$row['Klas_naam'].'</option>';
+            echo '<option value="">'.$row['opleiding'] .' - ' .$row['klas_naam'].'</option>';
         }
         echo '</select>';
 ?>
