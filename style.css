@@ -112,6 +112,13 @@ a:hover{
 .kleurtekst{
     color: #0e3f86;
 }
+#pag2blok1{
+    width: 1000px;
+    height: 400px;
+    background-image: url(images/bg.jpg);
+    margin-top: 15px;
+}
+
 
 
 
