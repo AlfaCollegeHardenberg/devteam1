@@ -32,8 +32,8 @@ require_once('connection.php');
                 </table>
         
     <?php
-        $query = "SELECT username, password FROM members";
-        $result = mysql_query($dbCon, $query);
+        $query = "SELECT * FROM members";
+        $result = mysql_query($query, $dbCon);
         echo '<select>';
         while ($row = mysql_fetch_assoc($result)) {
             echo '<option value="">'.$row['username'] .' - ' .$row['password'].'</option>';
