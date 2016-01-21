@@ -118,8 +118,8 @@ a:hover{
     background-image: url(images/bg.jpg);
     margin-top: 65px;
 }
-table{
-    border: 1|0 solid black;
+table, th, td {
+   border: 1px solid black;
 }
 
 
