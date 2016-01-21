@@ -10,11 +10,9 @@ if (isset($_SESSION['id'])) {
     die();
 }
 
-?>
 
-<?php
 require_once('header.php');
-include_once('connection.php');
+require_once('connection.php');
 ?>
 
 <section>
@@ -35,13 +33,12 @@ include_once('connection.php');
         
     <?php
         $query = "SELECT * FROM klassen";
-        $result = mysql_query($dbCon, $query);
-        echo $result
-        //echo '<select>';
-        //while ($row = mysql_fetch_assoc($result)) {
-        //    echo '<option value="">'.$row['opleiding'] .' - ' .$row['klas_naam'].'</option>';
-        //}
-        //echo '</select>';
+        $result = query($dbCon, $query);
+        echo '<select>';
+        while ($row = mysql_fetch_assoc($result)) {
+            echo '<option value="">'.$row['opleiding'] .' - ' .$row['klas_naam'].'</option>';
+        }
+        echo '</select>';
 ?>
         
             
