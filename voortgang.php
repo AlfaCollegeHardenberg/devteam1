@@ -70,6 +70,10 @@ require_once('connection.php');
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak2'];
+                      ?>
+                    </td>
+
+                    <?php
 
                     $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
@@ -80,7 +84,7 @@ require_once('connection.php');
                       }
                       ?>
 
-                    </td> 
+                 
                     <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
