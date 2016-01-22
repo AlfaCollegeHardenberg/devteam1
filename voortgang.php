@@ -57,9 +57,9 @@ require_once('connection.php');
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
-                        echo '<td> <tr>';
+                        echo '<tr> <td>';
                         echo $row['result_vak_1'];
-                        echo '</td> </tr>';
+                        echo '</tr> </td>';
                       }
                       ?>
                     
@@ -78,9 +78,9 @@ require_once('connection.php');
                     $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
-                        echo '<td> <tr>';
+                        echo '<tr> <td>';
                         echo $row['result_vak_2'];
-                        echo '</td> </tr>';
+                        echo '</tr> </td>';
                       }
                       ?>
 
