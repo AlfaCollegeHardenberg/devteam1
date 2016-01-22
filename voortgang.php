@@ -220,7 +220,7 @@ require_once('connection.php');
                         echo '</tr> </td>';
                       }
                       ?>
-<!--<?php/*
+<?php
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
@@ -368,8 +368,8 @@ require_once('connection.php');
                         echo '<td> <tr>';
                         echo $row['result_vak_20']
                         echo '</td> </tr>';
-                      }*/
-                  ?>-->
+                      }
+                  ?>
 
 
                   <!--
