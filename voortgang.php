@@ -57,9 +57,9 @@ require_once('connection.php');
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
-                        echo '<tr> <td>';
+                        echo '<td> <tr>';
                         echo $row['result_vak_1'];
-                        echo '</tr> </td>';
+                        echo '</td> </tr>';
                       }
                       ?>
                     
