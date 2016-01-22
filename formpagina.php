@@ -7,7 +7,7 @@
         if($_POST['name_first'] != "" && $_POST['name_last'] != ""){
             $first = $_POST['name_first'];
             $last = $_POST['name_last'];
-            $sql_store = "INSERT into names (id, first, last) VALUES (NULL, '$first', '$last')";
+            $sql_store = "INSERT into names (first, last) VALUES ('$first', '$last')";
             $sql = mysql_query($sql_store, $dbCon) or die(mysql_error());
         } else{
         echo "You need to enter data in both boxes!";
