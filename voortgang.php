@@ -31,6 +31,26 @@ require_once('connection.php');
                         echo $row['tabel_naam'];
                       ?>
                     </td>
+
+                    <?php
+                      $query = "SELECT * FROM klassen_ict";
+                      $result = mysql_query($query, $dbCon);
+                      while ($row = mysql_fetch_assoc($result)) {
+                        echo '<tr> <td>';
+                        echo $row['leerling_naam'];
+                        echo '</td> </tr>';
+                      }
+                    ?>
+
+                    <td>
+                      <?php 
+                        $query = "SELECT * FROM voortgangs_tabellen";
+                        $result = mysql_query($query, $dbCon);
+                        $row = mysql_fetch_assoc($result);
+                        echo $row['vak1'];
+                      ?>
+                    </td> 
+
                   <?php
 
                   # RIJ VAN VAK1 TM VAK5 BEGINT HIER
@@ -43,24 +63,7 @@ require_once('connection.php');
                         echo '</tr> </td>';
                       }
                       ?>
-                    <td>
-                      <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen";
-                        $result = mysql_query($query, $dbCon);
-                        $row = mysql_fetch_assoc($result);
-                        echo $row['vak1'];
-                      ?>
-                    </td> 
 
-                    <?php
-                      $query = "SELECT * FROM klassen_ict";
-                      $result = mysql_query($query, $dbCon);
-                      while ($row = mysql_fetch_assoc($result)) {
-                        echo '<tr> <td>';
-                        echo $row['leerling_naam'];
-                        echo '</td> </tr>';
-                      }
-                    ?>
 
                     <td>
                       <?php 
