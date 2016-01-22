@@ -34,7 +34,7 @@ require_once('connection.php');
 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak1'];
@@ -42,7 +42,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak2'];
@@ -50,7 +50,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak3'];
@@ -58,7 +58,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak4'];
@@ -66,7 +66,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak5'];
@@ -74,7 +74,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak6'];
@@ -82,7 +82,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak7'];
@@ -90,7 +90,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak8'];
@@ -98,7 +98,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak9'];
@@ -106,7 +106,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak10'];
@@ -114,7 +114,7 @@ require_once('connection.php');
                     </td>  
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak11'];
@@ -122,7 +122,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak12'];
@@ -130,7 +130,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak13'];
@@ -138,7 +138,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak14'];
@@ -146,7 +146,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak15'];
@@ -154,7 +154,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak16'];
@@ -162,7 +162,7 @@ require_once('connection.php');
                     </td>  
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak17'];
@@ -170,7 +170,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak18'];
@@ -178,7 +178,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak19'];
@@ -186,7 +186,7 @@ require_once('connection.php');
                     </td> 
                     <td>
                       <?php 
-                        $query = "SELECT * FROM voortgangs_tabellen WHERE id = 1";
+                        $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak20'];
@@ -326,7 +326,7 @@ require_once('connection.php');
                         echo $row['result_vak_15']
                         echo '</td> </tr>';
                       }
-                      
+
                   # VAK 16 TM VAK 20 BEGINT HIER
 
                       $query = "SELECT * FROM voortgangs_resultaten";
