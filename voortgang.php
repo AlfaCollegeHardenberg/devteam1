@@ -32,16 +32,6 @@ require_once('connection.php');
                       ?>
                     </td>
 
-                    <?php
-                      $query = "SELECT * FROM klassen_ict";
-                      $result = mysql_query($query, $dbCon);
-                      while ($row = mysql_fetch_assoc($result)) {
-                        echo '<tr> <td>';
-                        echo $row['leerling_naam'];
-                        echo '</td> </tr>';
-                      }
-                    ?>
-                    <tr>
                     <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
@@ -50,21 +40,6 @@ require_once('connection.php');
                         echo $row['vak1'];
                       ?>
                     </td> 
-
-                  <?php
-
-                  # RIJ VAN VAK1 TM VAK5 BEGINT HIER
-
-                      $query = "SELECT * FROM voortgangs_resultaten";
-                      $result = mysql_query($query, $dbCon);
-                      while ($row = mysql_fetch_assoc($result)) {
-                        echo '<tr> <td>';
-                        echo $row['result_vak_1'];
-                        echo '</tr> </td>';
-                      }
-                  ?>
-                    </tr>
-
                     <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
@@ -222,10 +197,29 @@ require_once('connection.php');
                     <!-- TABEL BOVENSTE RIJ STOPT HIER -->
                     <!-- TABEL LINKSE RIJ START HIER -->
                     <!-- DIT IS DE TABEL VAN KLAS MET ID 2 (PICT4V2A)-->
-
+                  <?php
+                      $query = "SELECT * FROM klassen_ict";
+                      $result = mysql_query($query, $dbCon);
+                      while ($row = mysql_fetch_assoc($result)) {
+                        echo '<tr> <td>';
+                        echo $row['leerling_naam'];
+                        echo '</td> </tr>';
+                      }
+                  ?>
                     <!-- TABEL LINKSE RIJ STOPT HIER -->
 
+                  <?php
 
+                  # RIJ VAN VAK1 TM VAK5 BEGINT HIER
+
+                      $query = "SELECT * FROM voortgangs_resultaten";
+                      $result = mysql_query($query, $dbCon);
+                      while ($row = mysql_fetch_assoc($result)) {
+                        echo '<tr> <td>';
+                        echo $row['result_vak_1'];
+                        echo '</tr> </td>';
+                      }
+                      ?>
 <!--<?php/*
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
