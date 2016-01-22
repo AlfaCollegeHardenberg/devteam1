@@ -199,11 +199,12 @@ require_once('connection.php');
                   <?php
                       $query = "SELECT * FROM klassen_ict";
                       $result = mysql_query($query, $dbCon);
-                      echo '<tr> <td>';
                       while ($row = mysql_fetch_assoc($result)) {
+                        echo '<tr> <td>';
                         echo $row['leerling_naam'];
+                        echo '</td> </tr>';
                       }
-                      echo '</td> </tr>';
+                      
                   ?>
                   <tr>
                     <td>
