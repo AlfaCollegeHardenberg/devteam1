@@ -24,7 +24,7 @@
 </head>
 <body>
     <h1>Name Storage</h1>
-    <form action="index.php" method="POST">
+    <form action="formpagina.php" method="POST">
         <input type="text" name="tabel_naam" value="" placeholder="Tabel_Naam">
         <input type="text" name="vak1" value="" placeholder="Vak1">
         <input type="submit" name="submit" value="Submit">
