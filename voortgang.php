@@ -93,6 +93,17 @@ require_once('connection.php');
                         echo $row['vak3'];
                       ?>
                     </td> 
+
+                    <?php
+                      $query = "SELECT * FROM voortgangs_resultaten";
+                      $result = mysql_query($query, $dbCon);
+                      while ($row = mysql_fetch_assoc($result)) {
+                        echo '<tr> <td>';
+                        echo $row['result_vak_3'];
+                        echo '</tr> </td>';
+                      }
+                      ?>
+
                     <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
@@ -241,13 +252,6 @@ require_once('connection.php');
                 <?php
 
 
-                      $query = "SELECT * FROM voortgangs_resultaten";
-                      $result = mysql_query($query, $dbCon);
-                      while ($row = mysql_fetch_assoc($result)) {
-                        echo '<td> <tr>';
-                        echo $row['result_vak_3'];
-                        echo '</td> </tr>';
-                      }
 
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
