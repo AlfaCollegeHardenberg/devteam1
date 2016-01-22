@@ -225,7 +225,7 @@ require_once('connection.php');
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_2']
+                        echo $row['result_vak_2'];
                         echo '</td> </tr>';
                       }
 
@@ -233,7 +233,7 @@ require_once('connection.php');
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_3']
+                        echo $row['result_vak_3'];
                         echo '</td> </tr>';
                       }
 
@@ -241,7 +241,7 @@ require_once('connection.php');
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_4']
+                        echo $row['result_vak_4'];
                         echo '</td> </tr>';
                       }
 
@@ -249,7 +249,7 @@ require_once('connection.php');
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_5']
+                        echo $row['result_vak_5'];
                         echo '</td> </tr>';
                       }
                   # RIJ VAN VAK 6 TM VAK 10 BEGINT HIER
@@ -258,35 +258,35 @@ require_once('connection.php');
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_6']
+                        echo $row['result_vak_6'];
                         echo '</td> </tr>';
                       }
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_7']
+                        echo $row['result_vak_7'];
                         echo '</td> </tr>';
                       }
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_8']
+                        echo $row['result_vak_8'];
                         echo '</td> </tr>';
                       }
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_9']
+                        echo $row['result_vak_9'];
                         echo '</td> </tr>';
                       }
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_10']
+                        echo $row['result_vak_10'];
                         echo '</td> </tr>';
                       }
                   # VAK 11 TM VAK 15 BEGINT HIER
@@ -295,7 +295,7 @@ require_once('connection.php');
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_11']
+                        echo $row['result_vak_11'];
                         echo '</td> </tr>';
                       }
 
@@ -303,28 +303,28 @@ require_once('connection.php');
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_12']
+                        echo $row['result_vak_12'];
                         echo '</td> </tr>';
                       }
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_13']
+                        echo $row['result_vak_13'];
                         echo '</td> </tr>';
                       }
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_14']
+                        echo $row['result_vak_14'];
                         echo '</td> </tr>';
                       }
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_15']
+                        echo $row['result_vak_15'];
                         echo '</td> </tr>';
                       }
 
@@ -334,7 +334,7 @@ require_once('connection.php');
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_16']
+                        echo $row['result_vak_16'];
                         echo '</td> </tr>';
                       }
 
@@ -342,7 +342,7 @@ require_once('connection.php');
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_17']
+                        echo $row['result_vak_17'];
                         echo '</td> </tr>';
                       }
 
@@ -350,7 +350,7 @@ require_once('connection.php');
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_18']
+                        echo $row['result_vak_18'];
                         echo '</td> </tr>';
                       }
 
@@ -358,7 +358,7 @@ require_once('connection.php');
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_19']
+                        echo $row['result_vak_19'];
                         echo '</td> </tr>';
                       }
 
@@ -366,7 +366,7 @@ require_once('connection.php');
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_20']
+                        echo $row['result_vak_20'];
                         echo '</td> </tr>';
                       }
                   ?>
