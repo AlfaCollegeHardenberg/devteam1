@@ -216,7 +216,7 @@ require_once('connection.php');
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<td> <tr>';
-                        echo $row['result_vak_1']
+                        echo $row['result_vak_1'];
                         echo '</td> </tr>';
                       }
                       ?>
