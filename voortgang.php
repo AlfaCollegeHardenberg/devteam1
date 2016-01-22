@@ -208,7 +208,7 @@ require_once('connection.php');
                   ?>
                     <!-- TABEL LINKSE RIJ STOPT HIER -->
 
-                  <?php/*
+                  <!--<?php/*
 
                   # RIJ VAN VAK1 TM VAK5 BEGINT HIER
 
@@ -368,7 +368,7 @@ require_once('connection.php');
                         echo $row['result_vak_20']
                         echo '</td> </tr>';
                       }*/
-                  ?>
+                  ?>-->
 
 
                   <!--
