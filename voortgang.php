@@ -41,7 +41,7 @@ require_once('connection.php');
                         echo '</td> </tr>';
                       }
                     ?>
-
+                    <tr>
                     <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
@@ -62,8 +62,8 @@ require_once('connection.php');
                         echo $row['result_vak_1'];
                         echo '</tr> </td>';
                       }
-                      ?>
-
+                  ?>
+                    </tr>
 
                     <td>
                       <?php 
