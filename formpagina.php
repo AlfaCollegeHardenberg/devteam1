@@ -3,11 +3,11 @@
 
     include_once("connection.php");
 
-    if(isset($_POST['name_first']) && isset($_POST['name_last'])) {
-        if($_POST['name_first'] != "" && $_POST['name_last'] != ""){
-            $first = $_POST['name_first'];
-            $last = $_POST['name_last'];
-            $sql_store = "INSERT into names (id, first, last) VALUES (NULL, '$first', '$last')";
+    if(isset($_POST['tabel_naam']) && isset($_POST['vak1'])) {
+        if($_POST['tabel_naam'] != "" && $_POST['vak1'] != ""){
+            $first = $_POST['tabel_naam'];
+            $last = $_POST['vak1'];
+            $sql_store = "INSERT INTO voortgangs_tabellen (tabel_naam, vak1) VALUES (NULL, '$tabel_naam', '$vak1')";
             $sql = mysql_query($sql_store, $dbCon) or die(mysql_error());
         } else{
         echo "You need to enter data in both boxes!";
@@ -25,8 +25,8 @@
 <body>
     <h1>Name Storage</h1>
     <form action="index.php" method="POST">
-        <input type="text" name="name_first" value="" placeholder="First Name">
-        <input type="text" name="name_last" value="" placeholder="Last Name">
+        <input type="text" name="tabel_naam" value="" placeholder="Tabel_Naam">
+        <input type="text" name="vak1" value="" placeholder="Vak1">
         <input type="submit" name="submit" value="Submit">
     </form>
 </body>
