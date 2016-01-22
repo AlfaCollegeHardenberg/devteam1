@@ -38,7 +38,7 @@ require_once('header.php');
     
     <div id="pag3blok1">
         
-    <h1>Name Storage</h1>
+    <h1 class="kleurtekst">Informatie toevoegen</h1>
     <form action="formpagina.php" method="POST">
         <input type="text" name="name_first" value="" placeholder="First Name">
         <input type="text" name="name_last" value="" placeholder="Last Name">
