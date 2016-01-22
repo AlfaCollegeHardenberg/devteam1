@@ -19,8 +19,10 @@ require_once('connection.php');
     <div id="pag2blok1">
             
                 <table style="width:100%">
-                  <tr>
 
+                  <!-- TABEL BOVENSTE RIJ START HIER -->
+                  <tr>
+                    <!-- TABEL NAAM -->
                     <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
@@ -29,6 +31,7 @@ require_once('connection.php');
                         echo $row['tabel_naam'];
                       ?>
                     </td>
+
                     <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
@@ -191,7 +194,17 @@ require_once('connection.php');
                     </td>
 
                   </tr>
-
+                    <!-- TABEL BOVENSTE RIJ STOPT HIER -->
+                    <!-- TABEL LINKSE RIJ START HIER -->
+                  <?php
+                      $query = "SELECT * FROM klassen_ict";
+                      $result = mysql_query($query, $dbCon);
+                      echo '<tr> <td>';
+                      while ($row = mysql_fetch_assoc($result)) {
+                        echo $row['leerling_naam'];
+                      }
+                      echo '</td> </tr>';
+                  ?>
                   <tr>
                     <td>
                       <?php 
@@ -292,17 +305,17 @@ require_once('connection.php');
                     <td>1</td>
                   </tr>
                 </table>
-<!--        
+        
     <?php
-        #$query = "SELECT * FROM klassen";
-        #$result = mysql_query($query, $dbCon);
-        #echo '<select>';
-        #while ($row = mysql_fetch_assoc($result)) {
-        #    echo '<option value="">'.$row['opleiding'] .' - ' .$row['klas_naam'].'</option>';
-        #}
-        #echo '</select>';
+        $query = "SELECT * FROM klassen";
+        $result = mysql_query($query, $dbCon);
+        echo '<select>';
+        while ($row = mysql_fetch_assoc($result)) {
+            echo '<option value="">'.$row['opleiding'] .' - ' .$row['klas_naam'].'</option>';
+        }
+        echo '</select>';
 ?>
--->        
+       
             
     </div>
 
