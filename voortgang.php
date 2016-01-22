@@ -198,7 +198,7 @@ require_once('connection.php');
                     <!-- TABEL LINKSE RIJ START HIER -->
                     <!-- DIT IS DE TABEL VAN KLAS MET ID 2 (PICT4V2A)-->
                   <?php
-                      $query = "SELECT * FROM klassen_ict WHERE id_klas = 0";
+                      $query = "SELECT * FROM klassen_ict";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<tr> <td>';
