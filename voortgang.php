@@ -220,7 +220,7 @@ require_once('connection.php');
                         echo '</tr> </td>';
                       }
                       ?>
-<?php
+                <?php
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
@@ -252,7 +252,7 @@ require_once('connection.php');
                         echo $row['result_vak_5'];
                         echo '</td> </tr>';
                       }
-                  # RIJ VAN VAK 6 TM VAK 10 BEGINT HIER
+                  /*# RIJ VAN VAK 6 TM VAK 10 BEGINT HIER
 
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
@@ -369,7 +369,7 @@ require_once('connection.php');
                         echo $row['result_vak_20'];
                         echo '</td> </tr>';
                       }
-                  ?>
+                  */?>
 
 
                   <!--
