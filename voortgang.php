@@ -56,14 +56,14 @@ require_once('connection.php');
                       ?>
                     
 
-                    
+                    <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
                         echo $row['vak2'];
                       ?>
-                     
+                    </td> 
                     <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
