@@ -41,7 +41,7 @@ require_once('connection.php');
                       ?>
                     </td> 
 
-                    <tr>
+                    <td>
                       <?php
 
                   # RIJ VAN VAK1 TM VAK5 BEGINT HIER
@@ -54,7 +54,7 @@ require_once('connection.php');
                         echo '</tr> </td>';
                       }
                       ?>
-                    </tr>
+                    </td>
 
                     <td>
                       <?php 
