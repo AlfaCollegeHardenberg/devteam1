@@ -1,47 +1,33 @@
 <?php
-error_reporting(E_ALL & ~E_NOTICE);
-session_start();
+    session_start();
 
-if (isset($_SESSION['id'])) {
-    $userId = $_SESSION['id'];
-    $username = $_SESSION['username'];
-} else {
-    header('Location: index.php');
-    die();
-}
+    include_once("connection.php");
 
+    if(isset($_POST['name_first']) && isset($_POST['name_last'])) {
+        if($_POST['name_first'] != "" && $_POST['name_last'] != ""){
+            $first = $_POST['name_first'];
+            $last = $_POST['name_last'];
+            $sql_store = "INSERT into names (id, first, last) VALUES (NULL, '$first', '$last')";
+            $sql = mysql_query($sql_store, $dbCon) or die(mysql_error());
+        } else{
+        echo "You need to enter data in both boxes!";
+        }
+    } else{
+        echo "You need to enter data in both boxes!";
+    }
+?> 
 
-require_once('header.php');
-require_once('connection.php');
-?>
-
-<section>
-    <div id="pag3blok1">
-        
-        <form>
-            Klas:
-          <input type="text" name="klas">
-            <br>
-            Vak: 
-          <input type="text" name="vak">
-            <br><br>
-             Vak1:  
-          <input type="text" name="vak1">
-            <br>
-             Vak2:
-          <input type="text" name="vak2">
-            <br>
-             Vak3:
-          <input type="text" name="vak3">
-            <br><br>
-          <input type="submit" value="Submit">
-        </form> 
-
-    </div>
-
-    
-</section>
-
-<?php
-	require_once ('footer.php');
-?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Name Storage</title>
+</head>
+<body>
+    <h1>Name Storage</h1>
+    <form action="index.php" method="POST">
+        <input type="text" name="name_first" value="" placeholder="First Name">
+        <input type="text" name="name_last" value="" placeholder="Last Name">
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>
