@@ -31,7 +31,18 @@ require_once('connection.php');
                         echo $row['tabel_naam'];
                       ?>
                     </td>
+                  <?php
 
+                  # RIJ VAN VAK1 TM VAK5 BEGINT HIER
+
+                      $query = "SELECT * FROM voortgangs_resultaten";
+                      $result = mysql_query($query, $dbCon);
+                      while ($row = mysql_fetch_assoc($result)) {
+                        echo '<tr> <td>';
+                        echo $row['result_vak_1'];
+                        echo '</tr> </td>';
+                      }
+                      ?>
                     <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
@@ -211,18 +222,7 @@ require_once('connection.php');
 
                     <!-- TABEL LINKSE RIJ STOPT HIER -->
 
-                  <?php
 
-                  # RIJ VAN VAK1 TM VAK5 BEGINT HIER
-
-                      $query = "SELECT * FROM voortgangs_resultaten";
-                      $result = mysql_query($query, $dbCon);
-                      while ($row = mysql_fetch_assoc($result)) {
-                        echo '<tr> <td>';
-                        echo $row['result_vak_1'];
-                        echo '</tr> </td>';
-                      }
-                      ?>
 <!--<?php/*
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
