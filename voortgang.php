@@ -208,7 +208,7 @@ require_once('connection.php');
                   ?>
                     <!-- TABEL LINKSE RIJ STOPT HIER -->
 
-                  <!--<?php/*
+                  <?php
 
                   # RIJ VAN VAK1 TM VAK5 BEGINT HIER
 
@@ -219,7 +219,8 @@ require_once('connection.php');
                         echo $row['result_vak_1']
                         echo '</td> </tr>';
                       }
-
+                      ?>
+<!--<?php/*
                       $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
