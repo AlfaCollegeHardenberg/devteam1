@@ -198,7 +198,7 @@ require_once('connection.php');
                     <!-- TABEL LINKSE RIJ START HIER -->
                     <!-- DIT IS DE TABEL VAN KLAS MET ID 2 (PICT4V2A)-->
                   <?php
-                      $query = "SELECT * FROM klassen_ict WHERE id_klas = 2";
+                      $query = "SELECT * FROM klassen_ict WHERE id_klas = 0";
                       $result = mysql_query($query, $dbCon);
                       while ($row = mysql_fetch_assoc($result)) {
                         echo '<tr> <td>';
@@ -474,15 +474,15 @@ require_once('connection.php');
                 -->
                 </table>
         
-    <?php
+   <!-- <?php/*
         $query = "SELECT * FROM klassen";
         $result = mysql_query($query, $dbCon);
         echo '<select>';
         while ($row = mysql_fetch_assoc($result)) {
             echo '<option value="">'.$row['opleiding'] .' - ' .$row['klas_naam'].'</option>';
         }
-        echo '</select>';
-?>
+        echo '</select>';*/
+?>-->
        
             
     </div>
