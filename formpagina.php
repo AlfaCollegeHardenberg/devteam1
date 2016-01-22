@@ -10,10 +10,10 @@
             $sql_store = "INSERT into names (first, last) VALUES ('$first', '$last')";
             $sql = mysql_query($sql_store, $dbCon) or die(mysql_error());
         } else{
-        echo "You need to enter data in both boxes!";
+        #echo "You need to enter data in both boxes!";
         }
     } else{
-        echo "You need to enter data in both boxes!";
+        #echo "You need to enter data in both boxes!";
     }
 ?> 
 
