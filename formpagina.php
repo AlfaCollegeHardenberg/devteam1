@@ -40,8 +40,8 @@ require_once('header.php');
         
     <h1 class="kleurtekst">Informatie toevoegen</h1>
     <form action="formpagina.php" method="POST">
-        <input type="text" name="name_first" value="" placeholder="First Name">
-        <input type="text" name="name_last" value="" placeholder="Last Name">
+        <input type="text" name="name_first" value="" placeholder="Vaknaam">
+        <input type="text" name="name_last" value="" placeholder="Hoofdstuk">
         <input type="submit" name="submit" value="Submit">
     </form>
         
