@@ -31,6 +31,7 @@ require_once('connection.php');
                         echo $row['tabel_naam'];
                       ?>
                     </td>
+
                   <?php
                       $query = "SELECT * FROM klassen_ict";
                       $result = mysql_query($query, $dbCon);
@@ -40,6 +41,7 @@ require_once('connection.php');
                         echo '</td> </tr>';
                       }
                   ?>
+
                     <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
@@ -50,18 +52,18 @@ require_once('connection.php');
                     </td> 
 
                    
-                      <?php
+                  <?php
 
                   # RIJ VAN VAK1 TM VAK5 BEGINT HIER
 
-                      $query = "SELECT * FROM voortgangs_resultaten";
-                      $result = mysql_query($query, $dbCon);
-                      while ($row = mysql_fetch_assoc($result)) {
-                        echo '<tr> <td>';
-                        echo $row['result_vak_1'];
-                        echo '</tr> </td>';
-                      }
-                      ?>
+                    $query = "SELECT * FROM voortgangs_resultaten";
+                    $result = mysql_query($query, $dbCon);
+                    while ($row = mysql_fetch_assoc($result)) {
+                      echo '<tr> <td>';
+                      echo $row['result_vak_1'];
+                      echo '</tr> </td>';
+                    }
+                  ?>
                     
 
                     <td>
@@ -73,7 +75,7 @@ require_once('connection.php');
                       ?>
                     </td>
 
-                    <?php
+                  <?php
 
                     $query = "SELECT * FROM voortgangs_resultaten";
                       $result = mysql_query($query, $dbCon);
@@ -82,7 +84,7 @@ require_once('connection.php');
                         echo $row['result_vak_2'];
                         echo '</tr> </td>';
                       }
-                      ?>
+                  ?>
 
                  
                     <td>
@@ -122,8 +124,10 @@ require_once('connection.php');
                         echo '</tr> </td>';
                       }
                     ?>
+
+                    <!--
                     <td>
-                      <?php 
+                      <?php /*
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
@@ -247,19 +251,20 @@ require_once('connection.php');
                         $query = "SELECT * FROM voortgangs_tabellen";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
-                        echo $row['vak20'];
+                        echo $row['vak20']; */
                       ?>
                     </td>
+                    
 
-                  </tr>
+                  </tr>-->
                     <!-- TABEL BOVENSTE RIJ STOPT HIER -->
                     <!-- TABEL LINKSE RIJ START HIER -->
                     <!-- DIT IS DE TABEL VAN KLAS MET ID 2 (PICT4V2A)-->
 
                     <!-- TABEL LINKSE RIJ STOPT HIER -->
 
-  
-                <?php
+                  <!--
+                <?php/*
 
 
 
@@ -271,7 +276,7 @@ require_once('connection.php');
                         echo '<td> <tr>';
                         echo $row['result_vak_5'];
                         echo '</td> </tr>';
-                      }
+                      }*/
                   /*# RIJ VAN VAK 6 TM VAK 10 BEGINT HIER
 
                       $query = "SELECT * FROM voortgangs_resultaten";
@@ -391,7 +396,7 @@ require_once('connection.php');
                       }
                   */?>
 
-
+-->
                   <!--
                   <tr>
                     <td>
