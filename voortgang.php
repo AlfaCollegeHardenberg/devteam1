@@ -30,7 +30,7 @@ require_once('connection.php');
                         $row = mysql_fetch_assoc($result);
                         echo $row['tabel_naam'];
                       ?>
-                    </td> <td></td>
+                    </td>
 
                     <td>
                       <?php 
@@ -40,6 +40,17 @@ require_once('connection.php');
                         echo $row['vak1'];
                       ?>
                     </td> 
+
+                    <?php
+                      $query = "SELECT * FROM klassen_ict";
+                      $result = mysql_query($query, $dbCon);
+                      while ($row = mysql_fetch_assoc($result)) {
+                        echo '<tr> <td>';
+                        echo $row['leerling_naam'];
+                        echo '</td> </tr>';
+                      }
+                    ?>
+
                     <td>
                       <?php 
                         $query = "SELECT * FROM voortgangs_tabellen";
@@ -197,15 +208,7 @@ require_once('connection.php');
                     <!-- TABEL BOVENSTE RIJ STOPT HIER -->
                     <!-- TABEL LINKSE RIJ START HIER -->
                     <!-- DIT IS DE TABEL VAN KLAS MET ID 2 (PICT4V2A)-->
-                  <?php
-                      $query = "SELECT * FROM klassen_ict";
-                      $result = mysql_query($query, $dbCon);
-                      while ($row = mysql_fetch_assoc($result)) {
-                        echo '<tr> <td>';
-                        echo $row['leerling_naam'];
-                        echo '</td> </tr>';
-                      }
-                  ?>
+
                     <!-- TABEL LINKSE RIJ STOPT HIER -->
 
                   <?php
