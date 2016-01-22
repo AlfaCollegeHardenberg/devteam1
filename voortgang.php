@@ -204,11 +204,12 @@ require_once('connection.php');
                         echo $row['leerling_naam'];
                         echo '</td> </tr>';
                       }
-                      
                   ?>
+
+                  <!--
                   <tr>
                     <td>
-                      <?php 
+                      <?php /*
                         $query = "SELECT * FROM klassen_ict WHERE id = 1";
                         $result = mysql_query($query, $dbCon);
                         $row = mysql_fetch_assoc($result);
@@ -256,7 +257,7 @@ require_once('connection.php');
                           $query = "SELECT * FROM klassen_ict WHERE id = 5";
                           $result = mysql_query($query, $dbCon);
                           $row = mysql_fetch_assoc($result);
-                          echo $row['leerling_naam'];
+                          echo $row['leerling_naam']; */
                         ?>
                       </td>
                   </tr>
@@ -305,6 +306,7 @@ require_once('connection.php');
                     <tr>
                     <td>1</td>
                   </tr>
+                -->
                 </table>
         
     <?php
