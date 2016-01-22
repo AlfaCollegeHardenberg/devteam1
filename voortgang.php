@@ -30,7 +30,7 @@ require_once('connection.php');
                         $row = mysql_fetch_assoc($result);
                         echo $row['tabel_naam'];
                       ?>
-                    </td>
+                    </td> <td></td>
 
                     <td>
                       <?php 
