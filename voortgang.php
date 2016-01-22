@@ -323,6 +323,10 @@ require_once('connection.php');
        
             
     </div>
+    
+    <div id="pag2blok3">
+        <a class="link3" href="formpagina.php">Informatie invoegen</a>
+    </div>
 
     
 </section>

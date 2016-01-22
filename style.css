@@ -76,6 +76,9 @@ footer{
     float: right;
     margin-right: 30px;
 }
+.link3{
+    line-height: 50px;
+}
 h1{
     font-size: 250%;
 }
@@ -121,6 +124,20 @@ a:hover{
 }
 table, th, td {
    border: 1px solid black;
+}
+#pag2blok3{
+    width: 1000px;
+    height: 50px;
+    background-image: url(images/bg.jpg);
+    text-align: center;
+    margin-top: 15px;
+}
+#pag3blok1{
+    width: 1000px;
+    height: 600px;
+    background-image: url(images/bg.jpg);
+    margin-top: 65px;
+    text-align: center;
 }
 
 
